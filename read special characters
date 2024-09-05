@@ -1,0 +1,25 @@
+package sk2;
+
+import java.util.*;
+
+public class specialcharcount {
+
+	public static void main(String[] args) {
+		Scanner a= new Scanner(System.in);
+		System.out.println("Enter sentence:");
+		String n=a.nextLine();
+		int m=0;
+		char[] charArray=n.toCharArray();
+		for(char c:charArray)
+		{
+			if(!Character.isLetterOrDigit(c))
+			{
+				m++;
+			}
+		}
+		System.out.println(m);
+
+
+	}
+
+}
