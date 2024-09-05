@@ -1,0 +1,17 @@
+package sk;
+
+import java.util.*;
+public class perfectsquare {
+
+	public static void main(String[] args) {
+		int i,n;
+		Scanner a=new Scanner(System.in);
+		n=a.nextInt();
+		for(i=1;i<n;i++){
+			if(i*i==n) {
+				System.out.println("perfect");
+			}
+		}
+	}
+
+}
