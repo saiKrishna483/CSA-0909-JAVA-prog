@@ -1,0 +1,21 @@
+package  sk;
+
+public class sumofevenfibo {
+
+	public static void main(String[] args) {
+		int i,n=4,first=0,second=1,nt,sum=0;
+		System.out.println(first);
+		System.out.println(second);
+		for(i=0;i<2*n;i++) {
+			if(i%2==0) {
+				sum+=first;
+			}
+			nt =first+second;
+			first=second;
+			second=nt;
+			System.out.println(nt);
+		}
+
+	}
+
+}
