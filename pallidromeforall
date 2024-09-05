@@ -1,0 +1,24 @@
+package sk;
+
+import java.util.Scanner;
+
+public class palidromenoloops {
+
+	public static void main(String[] args) {
+		String word,b,reversed;
+		Scanner a=new Scanner(System.in);
+		System.out.println("Enter String");
+		word =a.nextLine();
+		b=word;
+		reversed =new StringBuilder(word).reverse().toString();
+		System.out.println(reversed);
+		if(reversed.equals(word)) {
+			System.out.print("palindrome");
+		}
+		else  {
+			System.out.print("not palindrome");
+		}
+
+	}
+
+}
