@@ -1,0 +1,36 @@
+package sk;
+
+import java.util.Scanner;
+
+public class subjectTotal {
+
+	public static void main(String[] args) {
+		float python,C,Math,Physics,sum,avg;
+		Scanner a=new Scanner(System.in);
+		System.out.println("python:");
+		python=a.nextFloat();
+		System.out.println("C:");
+		C=a.nextFloat();
+		System.out.println("Math:");
+		Math=a.nextFloat(); 
+		System.out.println("Physics:");
+		Physics=a.nextFloat();
+		sum=python+C+Math+Physics;
+		avg=sum/4;
+		System.out.println("Total:"+sum);
+		System.out.println("Avg:"+avg);
+		
+		if(avg>=75 ) {
+			System.out.println("Distinction");
+		}else if(avg<75 && avg>=60) {
+			System.out.println("First Divison");
+		}else if(avg<60 && avg>=50) {
+			System.out.println("Second Divison");
+		}else if(avg<50 && avg>=40) {
+			System.out.println("Third Divison");
+		}else {
+			System.out.println("Fail");
+		}
+	}
+
+}
