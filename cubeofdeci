@@ -1,0 +1,19 @@
+package sk;
+
+import java.util.Scanner;
+
+public class cubeofdeci {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		float n,Sq,cube;
+		System.out.println("Enter number:");
+		n=a.nextFloat();
+		Sq=n*n;
+		System.out.println("sq is:"+Sq);
+		cube=n*n*n;
+		System.out.println("cube is:"+cube);
+
+	}
+
+}
