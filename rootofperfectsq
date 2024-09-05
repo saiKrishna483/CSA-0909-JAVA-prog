@@ -1,0 +1,18 @@
+package sk;
+
+import java.util.Scanner;
+
+public class rootofperfectsquare {
+
+	public static void main(String[] args) {
+		Scanner a=new Scanner(System.in);
+		int n,i;
+		System.out.println("Enter n:");
+		n=a.nextInt();
+		for(i=1;i<=n;i++) {
+			if(i*i==n) {
+				System.out.println("+"+i+" -"+i);
+			}
+		}
+	}
+}
